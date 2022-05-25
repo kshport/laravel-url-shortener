@@ -1,0 +1,44 @@
+{
+  "name": "kshport/laravel-url-shortener",
+  "description": "Laravel package for shortening urls",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://github.com/kshport/laravel-url-shortener",
+  "authors": [
+    {
+      "name": "Kostya Shport",
+      "email": "kostya.develop@gmail.com"
+    }
+  ],
+  "keywords": [
+    "kshport",
+    "short-urls",
+    "url-shortener",
+    "laravel",
+    "laravel-package"
+  ],
+  "autoload": {
+    "psr-4": {
+      "KShport\\LaravelUrlShortener\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "KShport\\LaravelUrlShortener\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "KShport\\LaravelUrlShortener\\LaravelUrlShortenerServiceProvider"
+      ]
+    }
+  },
+  "require": {
+    "php": "^8.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^7.0",
+    "phpunit/phpunit": "^9.5"
+  }
+}
