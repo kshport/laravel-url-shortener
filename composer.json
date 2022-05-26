@@ -30,7 +30,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "KShport\\LaravelUrlShortener\\LaravelUrlShortenerServiceProvider"
+        "KShport\\LaravelUrlShortener\\Providers\\LaravelUrlShortenerServiceProvider"
       ]
     }
   },
@@ -40,5 +40,8 @@
   "require-dev": {
     "orchestra/testbench": "^7.0",
     "phpunit/phpunit": "^9.5"
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
   }
 }

@@ -2,7 +2,7 @@
 
 namespace KShport\LaravelUrlShortener\Tests;
 
-use KShport\LaravelUrlShortener\LaravelUrlShortenerServiceProvider;
+use KShport\LaravelUrlShortener\Providers\LaravelUrlShortenerServiceProvider;
 
 class TestCase extends \Orchestra\Testbench\TestCase
 {
