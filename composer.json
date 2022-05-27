@@ -24,7 +24,8 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "KShport\\LaravelUrlShortener\\Tests\\": "tests"
+      "KShport\\LaravelUrlShortener\\Tests\\": "tests",
+      "KShport\\LaravelUrlShortener\\Database\\Factories\\": "database/factories"
     }
   },
   "extra": {
@@ -42,6 +43,8 @@
     "phpunit/phpunit": "^9.5"
   },
   "scripts": {
-    "test": "vendor/bin/phpunit"
+    "test": "vendor/bin/phpunit",
+    "test-f": "vendor/bin/phpunit --filter",
+    "tb": "./vendor/bin/testbench"
   }
 }

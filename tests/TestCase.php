@@ -9,7 +9,6 @@ class TestCase extends \Orchestra\Testbench\TestCase
     public function setUp(): void
     {
         parent::setUp();
-        // additional setup
     }
 
     protected function getPackageProviders($app): array
@@ -21,6 +20,7 @@ class TestCase extends \Orchestra\Testbench\TestCase
 
     protected function getEnvironmentSetUp($app)
     {
-        // perform environment setup
+        //$shortUrlMigration = include __DIR__.'/../database/migrations/2022_05_27_053624_create_short_urls_table.php';
+        //(new $shortUrlMigration())->up();
     }
 }
